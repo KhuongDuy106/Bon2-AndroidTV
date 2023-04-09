@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ScrollView
+        android:id="@+id/discover_vscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:fillViewport="true"
+        android:focusable="false"
+        android:scrollbars="none"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fragment_back"
+            android:padding="10dp"
+            tools:context=".fragment.DiscoverFragment"
+            android:orientation="vertical"
+            android:id="@+id/layout_discover">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover"
+                android:focusable="false"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="People"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:paddingTop="3dp"
+                android:textColor="@android:color/white"/>
+
+            <bon2.androidtv.view.TVRecyclerView
+                android:id="@+id/discover_people_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Videos"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:paddingTop="3dp"
+                android:textColor="@android:color/white"/>
+<!--
+            <bon2.androidtv.view.TVRecyclerView
+                android:id="@+id/discover_video_list"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"/>
+-->
+
+            <HorizontalScrollView
+                android:id="@+id/list_scrollview"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:id="@+id/discover_video_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layoutDirection="ltr">
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

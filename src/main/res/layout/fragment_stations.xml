@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.StationsFragment"
+    android:background="@color/fragment_back"
+    android:orientation="vertical"
+    android:padding="@dimen/fragment_padding">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/stations_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bon2tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_selected"
+                android:nextFocusLeft="@+id/travel"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Bon2TV"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/comedy"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Comedy"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/scheduled"/>
+
+            <Button
+                android:id="@+id/cooking"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Cooking"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/dance"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Dance"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/diy_howto"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="@string/diy_and_howto"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/family"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Family"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/fashion"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Fashion"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/health_beauty"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="@string/health_and_beauty"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/just_for_pics"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Just For Pics"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/lifestyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Lifestyle"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/movie_trailers"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Movie Trailers"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/music_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Music Videos"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/short_films"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Short Films"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/skit"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Skit"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/sports"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Sports"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/tv_teaser"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="TV Teaser"
+                android:textColor="@android:color/white"
+                android:nextFocusDown="@id/on_demand"/>
+
+            <Button
+                android:id="@+id/travel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/btn_background_normal"
+                android:nextFocusRight="@+id/bon2tv"
+                android:nextFocusDown="@id/on_demand"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Travel"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/sub_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/on_demand"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_subcategory_selected"
+            android:nextFocusLeft="@+id/search_hashtags"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="On-Demand"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/scheduled"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_subcategory_normal"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="Scheduled"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scheduled_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/one_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_subcategory_selected"
+            android:nextFocusLeft="@+id/one_week"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:text="Next 1 hr"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:nextFocusDown="@id/ll_items"/>
+
+        <Button
+            android:id="@+id/four_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_subcategory_normal"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:text="Next 4 hrs"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:nextFocusDown="@id/ll_items"/>
+
+        <Button
+            android:id="@+id/eight_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_subcategory_normal"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:text="Next 8 hrs"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:nextFocusDown="@id/ll_items"/>
+
+        <Button
+            android:id="@+id/one_day"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_subcategory_normal"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:text="Next 1 day"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:nextFocusDown="@id/ll_items"/>
+
+        <Button
+            android:id="@+id/two_days"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_subcategory_normal"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:text="Next 2 days"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:nextFocusDown="@id/ll_items"/>
+
+        <Button
+            android:id="@+id/one_week"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_subcategory_normal"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:text="Next 1 week"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:nextFocusDown="@id/ll_items"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

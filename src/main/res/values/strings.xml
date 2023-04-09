@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Bon2TV</string>
+
+    <string name="logo">Logo</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+    <!-- my feed -->
+    <string name="menu_myfeed">My Feed</string>
+    <string name="menu_discover">Discover</string>
+    <string name="menu_featured">Featured</string>
+    <string name="menu_stations">Stations</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_cart">Cart</string>
+    <string name="menu_profile">Hi</string>
+
+    <!-- featured -->
+    <string name="events_and_shops">Events &amp; Shops</string>
+
+    <!-- search -->
+    <string name="search">Search</string>
+    <string name="all">All</string>
+    <string name="videos">Videos</string>
+    <string name="people">People</string>
+    <string name="products">Products</string>
+    <string name="places">Places</string>
+    <string name="hashtags">HashTags</string>
+
+
+    <!-- stations -->
+    <string name="diy_and_howto">D.I.Y &amp; Howto</string>
+    <string name="health_and_beauty">Health &amp; Beauty</string>
+
+    <!-- cartoon -->
+    <string name="coming_soon">Coming soon...</string>
+
+    <!-- profile -->
+    <string name="posts">Posts</string>
+    <string name="stations">Stations</string>
+    <string name="messages">Messages</string>
+    <string name="overview">Overview</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="followings">Followings</string>
+    <string name="followings_comma">Followings,</string>
+    <string name="followers">Followers</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="link_to_artist_profile">Link to Artist Profile</string>
+    <string name="link_your_business">Link your business</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="log_out">Log Out</string>
+    <string name="download_app">Download the BON2 app on your mobile device to experience this feature.</string>
+</resources>

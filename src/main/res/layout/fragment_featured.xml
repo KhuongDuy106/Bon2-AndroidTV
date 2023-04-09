@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ScrollView
+        android:id="@+id/featured_vscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="@color/fragment_back"
+            android:padding="10dp"
+            tools:context=".fragment.DiscoverFragment"
+            android:orientation="vertical"
+            android:id="@+id/layout_discover">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured Feed"
+                android:focusable="false"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/events_and_shops"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:paddingTop="3dp"
+                android:textColor="@android:color/white"/>
+
+            <bon2.androidtv.view.TVRecyclerView
+                android:id="@+id/featured_event_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="People"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:paddingTop="3dp"
+                android:textColor="@android:color/white"/>
+
+            <bon2.androidtv.view.TVRecyclerView
+                android:id="@+id/featured_people_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Videos"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:paddingTop="3dp"
+                android:textColor="@android:color/white"/>
+<!--
+            <bon2.androidtv.view.TVRecyclerView
+                android:id="@+id/featured_video_list"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"/>
+-->
+            <HorizontalScrollView
+                android:id="@+id/list_scrollview"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:id="@+id/featured_video_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layoutDirection="ltr">
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

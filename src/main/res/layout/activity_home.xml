@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/exp_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:ael_duration="500"
+        app:ael_defaultChildIndex="0"
+        app:ael_expanded="true"
+        app:ael_interpolator="linear"
+        app:ael_orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/menu_icon"
+            android:layout_width="@dimen/menu_icon_width"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/menu_background"
+            android:paddingTop="150dp">
+
+            <LinearLayout
+                android:id="@+id/menu_icon_myfeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="false"
+                android:background="@color/menu_selected">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/menu_myfeed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_icon_discover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="false">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/menu_discover"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_icon_featured"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="false">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/menu_featured"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_icon_stations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="false">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/menu_stations"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_icon_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="false">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/menu_search"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_icon_profile"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="false">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/menu_profile"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_text"
+            android:orientation="vertical"
+            android:layout_width="@dimen/menu_text_width"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/menu_icon"
+            android:background="@drawable/menu_background">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="60dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/logo_white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_myfeed"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:nextFocusUp="@+id/menu_profile"
+                android:nextFocusRight="@+id/menu_myfeed"
+                android:nextFocusDown="@+id/menu_discover">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_text_height"
+                    android:text="@string/menu_myfeed"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_discover"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:nextFocusDown="@+id/menu_featured"
+                android:nextFocusRight="@+id/menu_discover">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_text_height"
+                    android:text="@string/menu_discover"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_featured"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:nextFocusDown="@+id/menu_stations"
+                android:nextFocusRight="@+id/menu_featured">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_text_height"
+                    android:text="@string/menu_featured"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_stations"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:nextFocusDown="@+id/menu_search"
+                android:nextFocusRight="@+id/menu_stations">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_text_height"
+                    android:text="@string/menu_stations"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_search"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:nextFocusDown="@+id/menu_profile"
+                android:nextFocusRight="@+id/menu_search">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_text_height"
+                    android:text="@string/menu_search"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_profile"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:nextFocusDown="@+id/menu_myfeed"
+                android:nextFocusRight="@+id/menu_profile">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/menu_text_height"
+                    android:text="@string/menu_profile"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/exp_menu" />
+</LinearLayout>

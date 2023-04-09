@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#30ff0000"
+    android:padding="@dimen/fragment_padding">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <bon2.androidtv.helper.RoundedImageView
+            android:id="@+id/img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:riv_corner_radius="3dp"
+            android:focusable="true"
+            android:clickable="true"
+            app:riv_border_width="2dp"
+            app:riv_border_color="#00ff00"
+            android:src="@drawable/default_profile"
+            >
+        <requestFocus/>
+        </bon2.androidtv.helper.RoundedImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Spoon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            android:textColor="@android:color/white"
+            android:text="A spoon is consisting of a small shallow bowl."
+            android:background="@drawable/video_item_textview"/>
+    </LinearLayout>
+</LinearLayout>

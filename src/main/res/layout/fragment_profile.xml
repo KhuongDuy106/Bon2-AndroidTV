@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_back"
+    android:orientation="vertical"
+    tools:context=".fragment.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/fragment_padding">
+
+        <bon2.androidtv.helper.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/default_profile"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profile_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="first name"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/profile_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="last name"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/profile_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user name"
+                android:layout_marginStart="20dp"
+                android:textColor="@android:color/white"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profile_following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/followings_comma"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/profile_followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/followers"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ff909090"/>
+
+    <LinearLayout
+        android:id="@+id/edit_profile_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/fragment_padding">
+
+        <Button
+            android:id="@+id/profile_btn_posts"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_background_selected"
+            android:nextFocusLeft="@+id/profile_btn_overview"
+            android:nextFocusUp="@+id/profile_btn_posts"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/posts"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white">
+        <requestFocus/>
+        </Button>
+
+        <Button
+            android:id="@+id/profile_btn_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:nextFocusUp="@+id/profile_btn_messages"
+            android:background="@drawable/btn_background_normal"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/messages"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/profile_btn_wishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:nextFocusUp="@+id/profile_btn_wishlist"
+            android:background="@drawable/btn_background_normal"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/wishlist"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/profile_btn_stations"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:nextFocusUp="@+id/profile_btn_stations"
+            android:background="@drawable/btn_background_normal"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/stations"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/profile_btn_followings"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:nextFocusUp="@+id/profile_btn_followings"
+            android:background="@drawable/btn_background_normal"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/followings"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/profile_btn_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:nextFocusUp="@+id/profile_btn_followers"
+            android:background="@drawable/btn_background_normal"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/followers"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/profile_btn_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:nextFocusUp="@+id/profile_btn_profile"
+            android:background="@drawable/btn_background_normal"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/edit_profile"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/profile_btn_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:nextFocusUp="@+id/profile_btn_overview"
+            android:background="@drawable/btn_background_normal"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/overview"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:nextFocusRight="@+id/profile_btn_posts"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/profile_frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_profile_btns"/>
+
+</LinearLayout>

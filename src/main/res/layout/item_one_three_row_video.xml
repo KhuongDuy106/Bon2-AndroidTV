@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_one_three_row_video"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/rl_item_bg"
+    android:layout_centerHorizontal="true">
+
+    <bon2.androidtv.helper.RoundedImageView
+        android:id="@+id/item_logo"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/item_icon"
+        app:riv_corner_radius="3dp"
+        app:riv_mutate_background="true" />
+
+    <LinearLayout
+        android:id="@+id/item_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_logo"
+        android:layout_gravity="top"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/item_textview_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_title1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="2dp"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="This is test string. How to get big lips part two"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/item_title2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
+            android:paddingBottom="2dp"
+            android:gravity="start"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="This is test string. Anwar jibawi $ Marton Wayns"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

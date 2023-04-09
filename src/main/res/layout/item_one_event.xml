@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_one_three_row_video"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_centerHorizontal="true">
+
+    <bon2.androidtv.helper.RoundedImageView
+        android:id="@+id/item_logo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/item_icon"
+        app:riv_border_width="1dp"
+        app:riv_corner_radius="5dip"
+        app:riv_mutate_background="true" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_logo"
+        android:layout_gravity="top"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="2dp"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="This is test string. How to get big lips part two"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</RelativeLayout>

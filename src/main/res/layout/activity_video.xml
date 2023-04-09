@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/fragment_padding"
+    android:background="@color/fragment_back"
+    tools:context=".activity.VideoActivity">
+
+    <bon2.androidtv.helper.RoundedImageView
+        android:id="@+id/img1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:riv_corner_radius="3dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:src="@drawable/default_profile"
+        android:background="@drawable/rv_item_bg"
+        />
+
+    <bon2.androidtv.helper.RoundedImageView
+        android:id="@+id/img2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:riv_corner_radius="3dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:src="@drawable/default_profile"
+        android:background="@drawable/rv_item_bg"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

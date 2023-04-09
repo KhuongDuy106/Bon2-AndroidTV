@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_icon_width">45dp</dimen>
+    <dimen name="menu_text_width">105dp</dimen>
+    <dimen name="menu_width">150dp</dimen>
+
+    <dimen name="menu_text_height">16dp</dimen>
+
+    <dimen name="fragment_padding">20dp</dimen>
+
+    <dimen name="btn_height">30dp</dimen>
+    <dimen name="btn_margin_side">2dp</dimen>
+    <dimen name="tv_padding_x">5dp</dimen>
+</resources>
